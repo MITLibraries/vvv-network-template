@@ -157,6 +157,9 @@ WP_THEMES=`get_config_value 'install_themes' ''`
 if [ ! -z "${WP_THEMES}" ]; then
     for theme in ${WP_THEMES//- /$'\n'}; do
         noroot wp theme install "${theme}" --activate
+        cd ${VVV_PATH_TO_SITE}/public_html/wp-content/themes/${theme}
+        npm install
+        grunt
     done
 fi
 
