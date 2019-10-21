@@ -160,4 +160,93 @@ if [ ! -z "${WP_THEMES}" ]; then
     done
 fi
 
+echo "Provisioning list of sites"
+
+noroot wp site create --slug=_dewey --title="Dewey"
+noroot wp site delete --slug=_dewey --yes
+
+noroot wp site create --slut=exhibits --title="Exhibits"
+
+noroot wp site create --slug=_four --title="Four"
+noroot wp site delete --slug=_four --yes
+
+noroot wp site create --slug=mithistory --title="MIT History"
+
+noroot wp site create --slug=_six --title="Six"
+noroot wp site delete --slug=_six --yes
+
+noroot wp site create --slug=news --title="News"
+
+noroot wp site create --slug=_rotch --title="Rotch"
+noroot wp site delete --slug=_rotch --yes
+
+noroot wp site create --slug=scholarly --title="Scholarly Communications"
+
+noroot wp site create --slug=_ten --title="Ten"
+noroot wp site delete --slug=_ten --yes
+
+noroot wp site create --slug=150books --title="150 Books"
+
+noroot wp site create --slug=_learning --title="Learning Experience"
+noroot wp site delete --slug=_learning --yes
+
+noroot wp site create --slug=_idla-blog --title="IDLA Blog"
+noroot wp site delete --slug=_idla-blog --yes
+
+noroot wp site create --slug=libtest --title="Library Sandbox"
+
+noroot wp site create --slug=giving --title="Giving"
+
+noroot wp site create --slug=_digitallibraries --title="Digital Libraries"
+noroot wp site delete --slug=_digitallibraries --yes
+
+noroot wp site create --slug=_connick --title="Connick"
+noroot wp site delete --slug=_connick --yes
+
+noroot wp site create --slug=collections --title="Collections"
+
+noroot wp site create --slug=_digital-archives --title="Digital Archives"
+noroot wp site delete --slug=_digital-archives --yes
+
+noroot wp site create --slug=_teaching-excellence --title="Teaching Excellence"
+noroot wp site delete --slug=_teaching-excellence --yes
+
+noroot wp site create --slug=music-oral-history --title="Music Oral History"
+
+noroot wp site create --slug=_document-services --title="Document Services"
+noroot wp site delete --slug=_document-services --yes
+
+noroot wp site create --slug=_chomsky --title="Chomsky"
+noroot wp site delete --slug=_chomsky --yes
+
+noroot wp site create --slug=docs --title="Document Services"
+
+noroot wp site create --slug=_preserve --title="Digital Preservation"
+noroot wp site delete --slug=_preserve --yes
+
+noroot wp site create --slug=data-management --title="Data Management"
+
+noroot wp site create --slug=future-spaces --title="Future Spaces"
+
+noroot wp site create --slug=council --title="Library Council"
+
+noroot wp site create --slug=akdc --title="Aga Khan Documentation Center"
+
+noroot wp site create --slug=mit-reads --title="MIT Reads"
+
+noroot wp site create --slug=pomeroy --title="Pomeroy"
+
+noroot wp site create --slug=2016-election-posters --title="2016 Election Posters"
+
+noroot wp site create --slug=mit-and-slavery --title="MIT and Slavery"
+
+noroot wp site create --slug=_open-access --title="Open Access Task Force"
+noroot wp site delete --slug=_open-access --yes
+
+noroot wp site create --slug=creos --title="CREOS"
+
+noroot wp site create --slug=distinctive-collections --title="Distinctive Collections"
+
+noroot wp site create --slug=tfnsabwg --title="About"
+
 echo "Site Template provisioner script completed"
